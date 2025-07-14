@@ -3,7 +3,7 @@
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
             <element>u_name</element>
-            <list_id display_value="u_animes" element="NULL" name="u_animes" parent="NULL" relationship="NULL" sys_domain="global" view="5e5f8260c811221055906c7518aa2d68">e5bffa7a472eee10403313ff016d4336</list_id>
+            <list_id display_value="u_animes" element="NULL" name="u_animes" parent="NULL" relationship="NULL" sys_domain="global" view="6f93b0609921221008ddd351c8920a28">e5bffa7a472eee10403313ff016d4336</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>0</position>
@@ -40,7 +40,7 @@
             <sys_updated_by>admin</sys_updated_by>
             <sys_updated_on>2025-07-09 06:27:51</sys_updated_on>
             <sys_user/>
-            <view display_value="Reference List" name="sys_ref_list">5e5f8260c811221055906c7518aa2d68</view>
+            <view display_value="Reference List" name="sys_ref_list">6f93b0609921221008ddd351c8920a28</view>
             <view_name/>
         </sys_ui_list>
     </sys_ui_list>

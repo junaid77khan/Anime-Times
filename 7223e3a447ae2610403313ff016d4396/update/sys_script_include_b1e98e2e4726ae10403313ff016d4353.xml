@@ -6,9 +6,7 @@
         <caller_access/>
         <client_callable>false</client_callable>
         <description/>
-        <mobile_callable>false</mobile_callable>
         <name>AnimeUtils</name>
-        <sandbox_callable>false</sandbox_callable>
         <script><![CDATA[var AnimeUtils = Class.create();
 AnimeUtils.prototype = {
     initialize: function(recordObj) {
@@ -129,15 +127,4 @@ AnimeUtils.prototype = {
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2025-07-08 08:45:37</sys_updated_on>
     </sys_script_include>
-    <sys_es_latest_script action="INSERT_OR_UPDATE">
-        <id>b1e98e2e4726ae10403313ff016d4353</id>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2025-07-08 08:02:31</sys_created_on>
-        <sys_id>decb02ea4726ae10403313ff016d4379</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-07-08 08:02:31</sys_updated_on>
-        <table>sys_script_include</table>
-        <use_es_latest>true</use_es_latest>
-    </sys_es_latest_script>
 </record_update>

@@ -58,15 +58,4 @@ var _infoMessage = _animeUtils.processAnimeAfterBR();
         <when>after</when>
     </sys_script>
     <sys_translated_text action="delete_multiple" query="documentkey=c8dc385247ea2e10403313ff016d4327"/>
-    <sys_es_latest_script action="INSERT_OR_UPDATE">
-        <id>c8dc385247ea2e10403313ff016d4327</id>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2025-07-07 07:42:33</sys_created_on>
-        <sys_id>00adb41247ea2e10403313ff016d435a</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-07-07 07:42:33</sys_updated_on>
-        <table>sys_script</table>
-        <use_es_latest>true</use_es_latest>
-    </sys_es_latest_script>
 </record_update>

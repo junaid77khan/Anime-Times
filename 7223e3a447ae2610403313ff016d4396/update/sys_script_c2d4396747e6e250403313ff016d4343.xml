@@ -51,15 +51,4 @@
         <when>before_display</when>
     </sys_script>
     <sys_translated_text action="delete_multiple" query="documentkey=c2d4396747e6e250403313ff016d4343"/>
-    <sys_es_latest_script action="INSERT_OR_UPDATE">
-        <id>c2d4396747e6e250403313ff016d4343</id>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2025-07-11 08:57:47</sys_created_on>
-        <sys_id>9d35756747e6e250403313ff016d4366</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-07-11 08:57:47</sys_updated_on>
-        <table>sys_script</table>
-        <use_es_latest>true</use_es_latest>
-    </sys_es_latest_script>
 </record_update>

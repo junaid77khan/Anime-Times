@@ -35,15 +35,4 @@
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2025-07-09 08:34:06</sys_updated_on>
     </sys_script_email>
-    <sys_es_latest_script action="INSERT_OR_UPDATE">
-        <id>e2e68f36476eee10403313ff016d43c9</id>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2025-07-09 07:08:14</sys_created_on>
-        <sys_id>c1f807b2476eee10403313ff016d43f2</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-07-09 07:08:14</sys_updated_on>
-        <table>sys_script_email</table>
-        <use_es_latest>true</use_es_latest>
-    </sys_es_latest_script>
 </record_update>

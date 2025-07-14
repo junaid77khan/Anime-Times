@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_form_sections form_id="02d52c2483322210152f55b6feaad34c" sys_domain="global" table="u_animes" version="3">
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>0</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-07-14 05:44:58</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>42d52c2483322210152f55b6feaad34d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="u_animes" name="u_animes" sys_domain="global" view="Default view">02d52c2483322210152f55b6feaad34c</sys_ui_form>
+            <sys_ui_section caption="Details" display_value="Details" name="u_animes" sys_domain="global" view="Default view">0353701647aa2e10403313ff016d433e</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-07-14 05:44:58</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>1</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-07-14 05:44:58</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>4ed52c2483322210152f55b6feaad34d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="u_animes" name="u_animes" sys_domain="global" view="Default view">02d52c2483322210152f55b6feaad34c</sys_ui_form>
+            <sys_ui_section caption="NULL" display_value="" name="u_animes" sys_domain="global" view="Default view">08c9843847626610403313ff016d438d</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-07-14 05:44:58</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>2</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-07-14 05:44:58</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>4ed52c2483322210152f55b6feaad351</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="u_animes" name="u_animes" sys_domain="global" view="Default view">02d52c2483322210152f55b6feaad34c</sys_ui_form>
+            <sys_ui_section caption="General Info" display_value="General Info" name="u_animes" sys_domain="global" view="Default view">8c93b41647aa2e10403313ff016d4339</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-07-14 05:44:58</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>3</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-07-14 05:44:58</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>82d52c2483322210152f55b6feaad355</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="u_animes" name="u_animes" sys_domain="global" view="Default view">02d52c2483322210152f55b6feaad34c</sys_ui_form>
+            <sys_ui_section caption="Notes" display_value="Notes" name="u_animes" sys_domain="global" view="Default view">8f53701647aa2e10403313ff016d433f</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-07-14 05:44:58</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form action="INSERT_OR_UPDATE">
+            <name>u_animes</name>
+            <roles/>
+            <sys_class_name>sys_ui_form</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-07-14 05:44:58</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>02d52c2483322210152f55b6feaad34c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>u_animes</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Anime Times" source="7223e3a447ae2610403313ff016d4396">7223e3a447ae2610403313ff016d4396</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Anime Times">7223e3a447ae2610403313ff016d4396</sys_scope>
+            <sys_update_name>sys_ui_form_sections_02d52c2483322210152f55b6feaad34c</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-07-14 05:44:58</sys_updated_on>
+            <sys_user/>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_form>
+    </sys_ui_form_sections>
+</record_update>
