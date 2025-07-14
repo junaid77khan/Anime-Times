@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>global.AnimeUtils</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description/>
+        <mobile_callable>false</mobile_callable>
+        <name>AnimeUtils</name>
+        <sandbox_callable>false</sandbox_callable>
+        <script><![CDATA[var AnimeUtils = Class.create();
+AnimeUtils.prototype = {
+    initialize: function(recordObj) {
+        this.source = "animeutils";
+        this.sourceObj = recordObj;
+        this.sourceObjectSysID = this.sourceObj.getUniqueValue();
+    },
+
+    _isRecordExistsInTable: function(_tableName, _query) {
+        try {
+            if (_tableName == undefined || gs.nil(_tableName)) {
+                throw new Error("Tablename is not defined.");
+            }
+            gs.info("Retrieved arguments: TableName" + _tableName + " and query: " + _query + " isRecordExistsInTable - " + this.source);
+            var grTable = new GlideRecord(_tableName);
+            if (_query != undefined || !gs.nil(_query)) {
+                grTable.addEncodedQuery(_query);
+            }
+            grTable.query();
+            return grTable;
+
+        } catch (e) {
+            gs.error("Error in function isRecordExistsInTable " + e + " isRecordExistsInTable - " + this.source);
+        }
+    },
+
+    _createArguments: function(actionValue, id, _type) {
+        try {
+            var _returnValues = {};
+            var _query = "";
+            var _msg = "";
+            if (_type == "before") {
+                if (actionValue == "fav_inactive") {
+                    _query = "u_anime=" + id + "^u_active=false^u_recommended_forDYNAMIC90d1921e5f510100a9ad2572f2b477fe";
+                    _msg = `No Active Record...`;
+                } else if (actionValue == "add_to_fav") {
+                    _query = "u_anime=" + id + "^u_active=true^u_recommended_forDYNAMIC90d1921e5f510100a9ad2572f2b477fe";
+                    _msg = `Animve Recommendation already exists..`;
+                }
+            } else if (_type == "afterConditionCheckforPrimaryQuery") {
+                if (actionValue == "fav_inactive") {
+                    _query = "u_anime=" + id + "^u_active=true^u_recommended_forDYNAMIC90d1921e5f510100a9ad2572f2b477fe";
+                } else if (actionValue == "add_to_fav") {
+                    _query = "u_active=false^u_recommended_forDYNAMIC90d1921e5f510100a9ad2572f2b477fe^u_anime=" + id;
+                }
+            }
+
+            _returnValues.query = _query;
+            _returnValues.msg = _msg;
+            return _returnValues;
+        } catch (e) {
+            gs.error("Error in function createArguments " + e + " createArguments - " + this.source);
+        }
+    },
+    processAnimeBeforeBR: function(_type) {
+        try {
+            var _createArguments = this._createArguments(this.sourceObj.getValue('u_action'), this.sourceObjectSysID, _type);
+            var _glideObject = this._isRecordExistsInTable("u_anime_recommendation", _createArguments.query);
+            if (_glideObject.hasNext()) {
+                gs.addErrorMessage(_createArguments.msg);
+                this.sourceObj.setAbortAction(true);
+            }
+        } catch (e) {
+            gs.error("Error in function processAnimeBeforeBR " + e + " processAnimeBeforeBR - " + this.source);
+        }
+    },
+
+    processAnimeAfterBR: function() {
+        try {
+            var _msg = "";
+            var _actionValue = this.sourceObj.getValue('u_action');
+            var _createArguments = this._createArguments(_actionValue, this.sourceObjectSysID, "afterConditionCheckforPrimaryQuery");
+            var _glideObject = this._isRecordExistsInTable("u_anime_recommendation", _createArguments.query);
+
+            if (_glideObject.next()) {
+                if (_actionValue == "add_to_fav") {
+                    _glideObject.u_active = true;
+
+                    _msg = `Anime Recommendation Exists for the Same Anime, Same user with number: ${_glideObject.getValue('u_number')}. The Record has been updated to true.`;
+                } else if (_actionValue == "fav_inactive") {
+                    _glideObject.u_active = false;
+
+                    _msg = `Anime Recommendation with number: ${_glideObject.getValue('u_number')} has been updated to false.`;
+                }
+                _glideObject.update();
+            } else {
+                _glideObject.initialize();
+                // type is afterConditionCheckforSecondaryInitializedQuery
+                if (_actionValue == "add_to_fav") {
+                    _glideObject.u_active = true;
+                    _msg = `Animde Recommendation record has been inserted Successfully.`;
+                } else if (_actionValue == "fav_inactive") {
+                    _glideObject.u_active = false;
+                    _msg = `Animde Recommendation record has been inserted Successfully having active as false.`;
+                }
+                _glideObject.u_anime = this.sourceObjectSysID;
+                _glideObject.u_recommended_for = gs.getUserID();
+                _glideObject.insert();
+            }
+		return _msg;
+        } catch (e) {
+            gs.error("Error in function processAnimeAfterBR " + e + " processAnimeAfterBR - " + this.source);
+        }
+    },
+
+    type: 'AnimeUtils'
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-08 08:02:31</sys_created_on>
+        <sys_id>b1e98e2e4726ae10403313ff016d4353</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_name>AnimeUtils</sys_name>
+        <sys_package display_value="Anime Times" source="7223e3a447ae2610403313ff016d4396">7223e3a447ae2610403313ff016d4396</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Anime Times">7223e3a447ae2610403313ff016d4396</sys_scope>
+        <sys_update_name>sys_script_include_b1e98e2e4726ae10403313ff016d4353</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-08 08:45:37</sys_updated_on>
+    </sys_script_include>
+    <sys_es_latest_script action="INSERT_OR_UPDATE">
+        <id>b1e98e2e4726ae10403313ff016d4353</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-08 08:02:31</sys_created_on>
+        <sys_id>decb02ea4726ae10403313ff016d4379</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-08 08:02:31</sys_updated_on>
+        <table>sys_script_include</table>
+        <use_es_latest>true</use_es_latest>
+    </sys_es_latest_script>
+</record_update>

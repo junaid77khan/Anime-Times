@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <active>true</active>
+        <api_name>global.test</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description/>
+        <mobile_callable>false</mobile_callable>
+        <name>test</name>
+        <sandbox_callable>false</sandbox_callable>
+        <script><![CDATA[var test = Class.create();
+test.prototype = {
+    initialize: function() {
+		this._name = gs.getUserDisplayName();
+    },
+	print:function()
+	{
+		return this._name;
+	},
+	printCurrentLoggedInUser:function(salutation)
+	{
+		try{
+			if (salutation == undefined || gs.nil(salutation))
+			{
+				throw new Error();
+			}
+			else{
+return salutation+" "+this.print();
+			}
+		}
+		catch(e)
+		{
+			return e;
+		}
+		
+	},
+
+    type: 'test'
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-08 07:31:45</sys_created_on>
+        <sys_id>a6440e664726ae10403313ff016d4397</sys_id>
+        <sys_mod_count>12</sys_mod_count>
+        <sys_name>test</sys_name>
+        <sys_package display_value="Anime Times" source="7223e3a447ae2610403313ff016d4396">7223e3a447ae2610403313ff016d4396</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Anime Times">7223e3a447ae2610403313ff016d4396</sys_scope>
+        <sys_update_name>sys_script_include_a6440e664726ae10403313ff016d4397</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-08 07:43:09</sys_updated_on>
+    </sys_script_include>
+    <sys_es_latest_script action="INSERT_OR_UPDATE">
+        <id>a6440e664726ae10403313ff016d4397</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-08 07:31:44</sys_created_on>
+        <sys_id>67b48a664726ae10403313ff016d4333</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-08 07:31:44</sys_updated_on>
+        <table>sys_script_include</table>
+        <use_es_latest>true</use_es_latest>
+    </sys_es_latest_script>
+</record_update>

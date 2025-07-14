@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_template">
+    <sys_template action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <global>false</global>
+        <group/>
+        <groups/>
+        <link_element/>
+        <name>TEMPLATE2</name>
+        <next/>
+        <next_child/>
+        <roles/>
+        <short_description/>
+        <show_on_template_bar>true</show_on_template_bar>
+        <stand_alone>false</stand_alone>
+        <sys_class_name>sys_template</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-11 08:46:41</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>ee92f5a347e6e250403313ff016d43c3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>TEMPLATE2</sys_name>
+        <sys_package display_value="Anime Times" source="7223e3a447ae2610403313ff016d4396">7223e3a447ae2610403313ff016d4396</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Anime Times">7223e3a447ae2610403313ff016d4396</sys_scope>
+        <sys_update_name>sys_template_ee92f5a347e6e250403313ff016d43c3</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-11 08:46:41</sys_updated_on>
+        <table>incident</table>
+        <template>assigned_to=46ca0887a9fe19810191e08e51927ebf^assignment_group=287ebd7da9fe198100f92cc8d1d2154e^caller_id=0a826bf03710200044e0bfc8bcbe5d7a^category=network^cmdb_ci=b0c25d1bc0a800090168be1bfcdcd759^description=User can't get to any of his files on the file server.^hold_reason=4^impact=1^knowledge=false^problem_id=9d3a266ac6112287004e37fb2ceb0133^short_description=Network file shares access issue Akash^state=3^urgency=1^EQ</template>
+        <user display_value="System Administrator">6816f79cc0a8016401c5a33be04be441</user>
+        <view/>
+    </sys_template>
+</record_update>

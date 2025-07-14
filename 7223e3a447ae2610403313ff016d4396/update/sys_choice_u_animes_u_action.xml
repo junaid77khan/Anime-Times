@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="u_action" table="u_animes" version="3">
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>u_action</element>
+            <name>u_animes</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-07-02 09:35:05</sys_created_on>
+            <sys_id>8077a32c47ae2610403313ff016d4348</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>u_action</sys_name>
+            <sys_package display_value="Anime Times" source="7223e3a447ae2610403313ff016d4396">7223e3a447ae2610403313ff016d4396</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Anime Times">7223e3a447ae2610403313ff016d4396</sys_scope>
+            <sys_update_name>sys_choice_u_animes_u_action</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-07-02 09:35:05</sys_updated_on>
+        </sys_choice_set>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_action</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Add to My Fav</label>
+            <language>en</language>
+            <name>u_animes</name>
+            <sequence>10</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-07-02 09:35:05</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>1467272c47ae2610403313ff016d43e5</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-07-02 09:35:29</sys_updated_on>
+            <value>add_to_fav</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_action</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Fav As InActive</label>
+            <language>en</language>
+            <name>u_animes</name>
+            <sequence>20</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-07-07 07:03:30</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>4674bc5647aa2e10403313ff016d4336</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-07-07 07:03:42</sys_updated_on>
+            <value>fav_inactive</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_action</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Reverse</label>
+            <language>en</language>
+            <name>u_animes</name>
+            <sequence>25</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-07-07 07:03:50</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>48b4b89647aa2e10403313ff016d43b2</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-07-07 07:03:57</sys_updated_on>
+            <value>reverse</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_action</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Remove from My Fav</label>
+            <language>en</language>
+            <name>u_animes</name>
+            <sequence>30</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-07-02 09:35:20</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>3f67efe847ae2610403313ff016d4363</sys_id>
+            <sys_mod_count>3</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-07-07 07:03:44</sys_updated_on>
+            <value>remove_fav</value>
+        </sys_choice>
+    </sys_choice>
+</record_update>

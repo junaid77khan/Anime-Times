@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="syntax_editor_macro">
+    <syntax_editor_macro action="INSERT_OR_UPDATE">
+        <comments>A common pattern of creating and querying a GlideRecord</comments>
+        <name>grquery</name>
+        <sys_class_name>syntax_editor_macro</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-07 07:20:28</sys_created_on>
+        <sys_id>3c98bcda47aa2e10403313ff016d4364</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>grquery</sys_name>
+        <sys_package display_value="Anime Times" source="7223e3a447ae2610403313ff016d4396">7223e3a447ae2610403313ff016d4396</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Anime Times">7223e3a447ae2610403313ff016d4396</sys_scope>
+        <sys_update_name>syntax_editor_macro_3c98bcda47aa2e10403313ff016d4364</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-07 07:43:42</sys_updated_on>
+        <text>var grTable = new GlideRecord("$0");&#13;
+grTable.addEncodedQuery("$1");&#13;
+grTable.query();&#13;
+if (grTable.next()) {&#13;
+   &#13;
+}&#13;
+</text>
+    </syntax_editor_macro>
+</record_update>

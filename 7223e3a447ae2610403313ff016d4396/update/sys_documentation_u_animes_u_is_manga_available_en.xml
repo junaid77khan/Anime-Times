@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="u_is_manga_available" label="Is Manga Available" language="en" table="u_animes">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>u_is_manga_available</element>
+            <help/>
+            <hint/>
+            <label>Is Manga Available</label>
+            <language>en</language>
+            <name>u_animes</name>
+            <plural>Is Manga Availables</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-07-02 09:31:17</sys_created_on>
+            <sys_id>0096e7e847ae2610403313ff016d4337</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Is Manga Available</sys_name>
+            <sys_package display_value="Anime Times" source="7223e3a447ae2610403313ff016d4396">7223e3a447ae2610403313ff016d4396</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Anime Times">7223e3a447ae2610403313ff016d4396</sys_scope>
+            <sys_update_name>sys_documentation_u_animes_u_is_manga_available_en</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-07-02 09:31:17</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

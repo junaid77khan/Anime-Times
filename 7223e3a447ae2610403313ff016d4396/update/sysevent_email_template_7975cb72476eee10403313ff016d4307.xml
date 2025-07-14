@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sysevent_email_template">
+    <sysevent_email_template action="INSERT_OR_UPDATE">
+        <collection>u_anime_recommendation</collection>
+        <email_layout/>
+        <message/>
+        <message_html><![CDATA[<p>Hello ${u_recommended_for.first_name},</p>
+<p>A new recommendation has been added.</p>
+<p>${mail_script:Anime_Email_Script}</p>
+<p>Thank you</p>]]></message_html>
+        <message_list/>
+        <message_text/>
+        <name>Anime Template</name>
+        <sms_alternate/>
+        <subject>New Recommendation Added for Anime ${u_anime.u_name}</subject>
+        <sys_class_name>sysevent_email_template</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-09 06:56:09</sys_created_on>
+        <sys_id>7975cb72476eee10403313ff016d4307</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name>Anime Template</sys_name>
+        <sys_package display_value="Anime Times" source="7223e3a447ae2610403313ff016d4396">7223e3a447ae2610403313ff016d4396</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Anime Times">7223e3a447ae2610403313ff016d4396</sys_scope>
+        <sys_update_name>sysevent_email_template_7975cb72476eee10403313ff016d4307</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-09 07:14:18</sys_updated_on>
+        <sys_version>2</sys_version>
+    </sysevent_email_template>
+</record_update>

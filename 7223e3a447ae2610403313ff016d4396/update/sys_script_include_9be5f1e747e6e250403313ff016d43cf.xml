@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>global.testScript</api_name>
+        <caller_access/>
+        <client_callable>true</client_callable>
+        <description/>
+        <mobile_callable>false</mobile_callable>
+        <name>testScript</name>
+        <sandbox_callable>false</sandbox_callable>
+        <script><![CDATA[var testScript = Class.create();
+testScript.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+	getMyData:function()
+	{
+		var _name = this.getParameter('mynamejojo');
+		var _returnData = {};
+		_returnData.name=_name;
+		_returnData.age=[30,90];
+		return JSON.stringify(_returnData);
+	},
+
+    type: 'testScript'
+});]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-11 09:04:28</sys_created_on>
+        <sys_id>9be5f1e747e6e250403313ff016d43cf</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>testScript</sys_name>
+        <sys_package display_value="Anime Times" source="7223e3a447ae2610403313ff016d4396">7223e3a447ae2610403313ff016d4396</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Anime Times">7223e3a447ae2610403313ff016d4396</sys_scope>
+        <sys_update_name>sys_script_include_9be5f1e747e6e250403313ff016d43cf</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-11 09:25:57</sys_updated_on>
+    </sys_script_include>
+    <sys_es_latest_script action="INSERT_OR_UPDATE">
+        <id>9be5f1e747e6e250403313ff016d43cf</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-11 09:04:28</sys_created_on>
+        <sys_id>cfb67d2747e6e250403313ff016d431b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-11 09:04:28</sys_updated_on>
+        <table>sys_script_include</table>
+        <use_es_latest>true</use_es_latest>
+    </sys_es_latest_script>
+</record_update>

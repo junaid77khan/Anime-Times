@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="u_recommended_for" label="Recommended For" language="en" table="u_anime_recommendation">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>u_recommended_for</element>
+            <help/>
+            <hint/>
+            <label>Recommended For</label>
+            <language>en</language>
+            <name>u_anime_recommendation</name>
+            <plural>Recommended Fors</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-07-07 06:54:39</sys_created_on>
+            <sys_id>2ea2b0d247aa2e10403313ff016d438b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Recommended For</sys_name>
+            <sys_package display_value="Anime Times" source="7223e3a447ae2610403313ff016d4396">7223e3a447ae2610403313ff016d4396</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Anime Times">7223e3a447ae2610403313ff016d4396</sys_scope>
+            <sys_update_name>sys_documentation_u_anime_recommendation_u_recommended_for_en</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-07-07 06:54:39</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>
