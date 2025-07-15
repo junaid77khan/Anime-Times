@@ -4,13 +4,13 @@
             <element>u_link</element>
             <position>0</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2025-07-07 06:57:43</sys_created_on>
-            <sys_id>2b53701647aa2e10403313ff016d43ca</sys_id>
+            <sys_created_on>2025-07-15 05:12:00</sys_created_on>
+            <sys_id>c1e7a1f883322210152f55b6feaad3e9</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Details" display_value="Details" name="u_animes" sys_domain="global" view="Default view">0353701647aa2e10403313ff016d433e</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2025-07-07 06:57:43</sys_updated_on>
+            <sys_updated_on>2025-07-15 05:12:00</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -18,13 +18,13 @@
             <element>.split</element>
             <position>1</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2025-07-07 06:57:43</sys_created_on>
-            <sys_id>af53701647aa2e10403313ff016d43ca</sys_id>
+            <sys_created_on>2025-07-15 05:12:00</sys_created_on>
+            <sys_id>8de7a1f883322210152f55b6feaad3e9</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Details" display_value="Details" name="u_animes" sys_domain="global" view="Default view">0353701647aa2e10403313ff016d433e</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2025-07-07 06:57:43</sys_updated_on>
+            <sys_updated_on>2025-07-15 05:12:00</sys_updated_on>
             <sys_user/>
             <type>.split</type>
         </sys_ui_element>
@@ -32,13 +32,13 @@
             <element>u_photo</element>
             <position>2</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2025-07-07 06:57:43</sys_created_on>
-            <sys_id>2753701647aa2e10403313ff016d43cb</sys_id>
+            <sys_created_on>2025-07-15 05:12:00</sys_created_on>
+            <sys_id>05e7a1f883322210152f55b6feaad3ea</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Details" display_value="Details" name="u_animes" sys_domain="global" view="Default view">0353701647aa2e10403313ff016d433e</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2025-07-07 06:57:43</sys_updated_on>
+            <sys_updated_on>2025-07-15 05:12:00</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -46,13 +46,13 @@
             <element>.end_split</element>
             <position>3</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2025-07-07 06:57:43</sys_created_on>
-            <sys_id>ab53701647aa2e10403313ff016d43cb</sys_id>
+            <sys_created_on>2025-07-15 05:12:00</sys_created_on>
+            <sys_id>89e7a1f883322210152f55b6feaad3ea</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Details" display_value="Details" name="u_animes" sys_domain="global" view="Default view">0353701647aa2e10403313ff016d433e</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2025-07-07 06:57:43</sys_updated_on>
+            <sys_updated_on>2025-07-15 05:12:00</sys_updated_on>
             <sys_user/>
             <type>.end_split</type>
         </sys_ui_element>
@@ -60,13 +60,13 @@
             <element>u_synopsis</element>
             <position>4</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2025-07-07 06:57:43</sys_created_on>
-            <sys_id>2353701647aa2e10403313ff016d43cc</sys_id>
+            <sys_created_on>2025-07-15 05:12:00</sys_created_on>
+            <sys_id>01e7a1f883322210152f55b6feaad3eb</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Details" display_value="Details" name="u_animes" sys_domain="global" view="Default view">0353701647aa2e10403313ff016d433e</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2025-07-07 06:57:43</sys_updated_on>
+            <sys_updated_on>2025-07-15 05:12:00</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
