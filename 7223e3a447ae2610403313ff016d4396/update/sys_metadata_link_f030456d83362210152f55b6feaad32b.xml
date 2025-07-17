@@ -1,44 +1,44 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
     <sys_metadata_link action="INSERT_OR_UPDATE">
         <directory>unload.demo</directory>
-        <documentkey>e26ab4ec83722210152f55b6feaad331</documentkey>
+        <documentkey>49992ce183362210152f55b6feaad309</documentkey>
         <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="u_animes">
     <u_animes action="INSERT_OR_UPDATE">
-        <sys_created_by>khan.junaid</sys_created_by>
-        <sys_created_on>2025-07-14 07:14:50</sys_created_on>
-        <sys_id>e26ab4ec83722210152f55b6feaad331</sys_id>
-        <sys_mod_count>12</sys_mod_count>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-17 08:35:44</sys_created_on>
+        <sys_id>49992ce183362210152f55b6feaad309</sys_id>
+        <sys_mod_count>4</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-07-17 09:07:50</sys_updated_on>
-        <u_action>add_to_fav</u_action>
-        <u_authors>62826bf03710200044e0bfc8bcbe5df1</u_authors>
+        <sys_updated_on>2025-07-17 08:35:59</sys_updated_on>
+        <u_action/>
+        <u_authors/>
         <u_comments/>
-        <u_domain>example.com</u_domain>
-        <u_episodes>1</u_episodes>
+        <u_domain/>
+        <u_episodes>12</u_episodes>
         <u_is_manga_available>false</u_is_manga_available>
         <u_link/>
-        <u_name>alkndbvljdnvlknasdlknv</u_name>
-        <u_number>ANI0001002</u_number>
+        <u_name/>
+        <u_number>ANI0001022</u_number>
         <u_photo/>
         <u_rank/>
         <u_rating/>
         <u_score/>
-        <u_status>airing</u_status>
+        <u_status>finished</u_status>
         <u_synopsis/>
-        <u_type>ona</u_type>
+        <u_type/>
     </u_animes>
 </record_update>
 ]]></payload>
         <sys_class_name>sys_metadata_link</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2025-07-15 08:14:30</sys_created_on>
-        <sys_id>e2a19a3c83f22210152f55b6feaad375</sys_id>
-        <sys_mod_count>1</sys_mod_count>
-        <sys_name>alkndbvljdnvlknasdlknv</sys_name>
+        <sys_created_on>2025-07-17 10:14:02</sys_created_on>
+        <sys_id>f030456d83362210152f55b6feaad32b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
         <sys_package display_value="Anime Times" source="7223e3a447ae2610403313ff016d4396">7223e3a447ae2610403313ff016d4396</sys_package>
         <sys_policy/>
         <sys_scope display_value="Anime Times">7223e3a447ae2610403313ff016d4396</sys_scope>
-        <sys_update_name>sys_metadata_link_e2a19a3c83f22210152f55b6feaad375</sys_update_name>
+        <sys_update_name>sys_metadata_link_f030456d83362210152f55b6feaad32b</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2025-07-17 10:14:02</sys_updated_on>
         <tablename>u_animes</tablename>
