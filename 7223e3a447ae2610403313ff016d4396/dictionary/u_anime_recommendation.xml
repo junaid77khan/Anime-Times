@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="8d52f89247aa2e10403313ff016d43f6" label="Anime Recommendation" max_length="40" name="u_anime_recommendation" type="collection">
+        <element attributes="edge_encryption_enabled=true" label="Active" max_length="40" name="u_active" type="boolean"/>
+        <element attributes="edge_encryption_enabled=true,encode_utf8=false" label="Anime" max_length="32" name="u_anime" reference="u_animes" type="reference"/>
+        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="u_number" type="string"/>
+        <element attributes="edge_encryption_enabled=true,encode_utf8=false" label="Recommended For" max_length="32" name="u_recommended_for" reference="sys_user" type="reference"/>
+        <index name="index">
+            <element name="u_anime"/>
+        </index>
+        <index name="index2">
+            <element name="u_recommended_for"/>
+        </index>
+    </element>
+</database>

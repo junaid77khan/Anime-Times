@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element audit="true" db_object_id="e5b4e3a447ae2610403313ff016d4366" label="Animes" max_length="40" name="u_animes" type="collection">
+        <element attributes="edge_encryption_enabled=true,pdf_cell_type=image" label="Photo" max_length="40" name="u_photo" type="user_image"/>
+        <element attributes="edge_encryption_enabled=true" label="domain" max_length="40" name="u_domain" type="string"/>
+        <element label="Link" max_length="1024" name="u_link" type="url"/>
+        <element label="Synopsis" max_length="4000" name="u_synopsis" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Score" max_length="20" name="u_score" type="decimal"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Type" max_length="40" name="u_type" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="ONA" sequence="20" value="ona"/>
+                <element inactive_on_update="false" label="Movie" sequence="30" value="movie"/>
+                <element inactive_on_update="false" label="Tv" sequence="10" value="tv"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" label="Is Manga Available" max_length="40" name="u_is_manga_available" type="boolean"/>
+        <element attributes="array=denormalized,no_sort=true,slushbucket_ref_no_expand=true,no_email=true" label="Authors" max_length="1024" name="u_authors" reference="sys_user" reference_qual="javascript:new global.RefAnimeUtils().getAuthorsReference(current.getValue('u_domain'))" type="glide_list" use_reference_qualifier="advanced"/>
+        <element label="Rating" max_length="100" name="u_rating" type="string"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Action" max_length="40" name="u_action" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Add to My Fav" sequence="10" value="add_to_fav"/>
+                <element inactive_on_update="false" label="Remove from My Fav" sequence="30" value="remove_fav"/>
+                <element inactive_on_update="false" label="Fav As InActive" sequence="20" value="fav_inactive"/>
+                <element inactive_on_update="false" label="Reverse" sequence="25" value="reverse"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" label="Rank" max_length="40" name="u_rank" type="integer"/>
+        <element label="Name" max_length="200" name="u_name" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Episodes" max_length="40" name="u_episodes" type="integer"/>
+        <element attributes="edge_encryption_enabled=true" label="Comments" max_length="4000" name="u_comments" type="journal_input"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Status" max_length="40" name="u_status" read_only="true" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Airing" sequence="20" value="airing"/>
+                <element inactive_on_update="false" label="Awaiting Release" sequence="10" value="awaiting_release"/>
+                <element inactive_on_update="false" label="Finished Airing" sequence="30" value="finished"/>
+            </choice>
+        </element>
+        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="u_number" type="string"/>
+    </element>
+</database>

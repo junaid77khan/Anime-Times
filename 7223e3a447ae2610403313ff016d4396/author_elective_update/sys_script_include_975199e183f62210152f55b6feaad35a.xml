@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="DELETE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>global.RescheduleAppointmentUtils</api_name>
+        <caller_access/>
+        <client_callable>true</client_callable>
+        <description/>
+        <name>RescheduleAppointmentUtils</name>
+        <script><![CDATA[var RescheduleAppointmentUtils = Class.create();
+RescheduleAppointmentUtils.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+	reschedule: function() {
+		var _recordSysId = this.getParameter('sysparm_sys_id');
+		var _newDate = this.getParameter('sysparm_new_date');
+
+		var _appointmentGR = new GlideRecord('u_appointment');
+		if(_appointmentGR.get(_recordSysId)) {
+			_appointmentGR.u_appointment_date = _newDate;
+			_appointmentGR.u_status = 'reschedule';
+			_appointmentGR.update();
+
+			var _patientGR = new GlideRecord('u_patient_record');
+			if(_patientGR.get(_appointmentGR.u_patient_id)) {
+				gs.eventQueue('appointment.rescheduled', _appointmentGR, '', '');
+			}		
+
+		}
+	},
+    type: 'RescheduleAppointmentUtils'
+});]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-17 11:43:24</sys_created_on>
+        <sys_id>975199e183f62210152f55b6feaad35a</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>RescheduleAppointmentUtils</sys_name>
+        <sys_package display_value="Anime Times" source="7223e3a447ae2610403313ff016d4396">7223e3a447ae2610403313ff016d4396</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Anime Times">7223e3a447ae2610403313ff016d4396</sys_scope>
+        <sys_update_name>sys_script_include_975199e183f62210152f55b6feaad35a</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-17 12:15:18</sys_updated_on>
+    </sys_script_include>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Anime Times">7223e3a447ae2610403313ff016d4396</application>
+        <file_path/>
+        <instance_id>19db3e261b0d06987d9d2f8dee4bcb98</instance_id>
+        <instance_name>dev249401</instance_name>
+        <name>sys_script_include_975199e183f62210152f55b6feaad35a</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_script_include"&gt;&lt;sys_script_include action="INSERT_OR_UPDATE"&gt;&lt;access&gt;package_private&lt;/access&gt;&lt;active&gt;true&lt;/active&gt;&lt;api_name&gt;global.RescheduleAppointmentUtils&lt;/api_name&gt;&lt;caller_access/&gt;&lt;client_callable&gt;true&lt;/client_callable&gt;&lt;description/&gt;&lt;name&gt;RescheduleAppointmentUtils&lt;/name&gt;&lt;script&gt;&lt;![CDATA[var RescheduleAppointmentUtils = Class.create();
+RescheduleAppointmentUtils.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+	reschedule: function() {
+		var _recordSysId = this.getParameter('sysparm_sys_id');
+		var _newDate = this.getParameter('sysparm_new_date');
+
+		var _appointmentGR = new GlideRecord('u_appointment');
+		if(_appointmentGR.get(_recordSysId)) {
+			_appointmentGR.u_appointment_date = _newDate;
+			_appointmentGR.u_status = 'reschedule';
+			_appointmentGR.update();
+
+			var _patientGR = new GlideRecord('u_patient_record');
+			if(_patientGR.get(_appointmentGR.u_patient_id)) {
+				gs.eventQueue('appointment.rescheduled', _appointmentGR, '', '');
+			}		
+
+		}
+	},
+    type: 'RescheduleAppointmentUtils'
+});]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_include&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-07-17 11:43:24&lt;/sys_created_on&gt;&lt;sys_id&gt;975199e183f62210152f55b6feaad35a&lt;/sys_id&gt;&lt;sys_mod_count&gt;3&lt;/sys_mod_count&gt;&lt;sys_name&gt;RescheduleAppointmentUtils&lt;/sys_name&gt;&lt;sys_package display_value="Anime Times" source="7223e3a447ae2610403313ff016d4396"&gt;7223e3a447ae2610403313ff016d4396&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Anime Times"&gt;7223e3a447ae2610403313ff016d4396&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_include_975199e183f62210152f55b6feaad35a&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-07-17 12:15:18&lt;/sys_updated_on&gt;&lt;/sys_script_include&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>1207883425</payload_hash>
+        <record_name>RescheduleAppointmentUtils</record_name>
+        <reverted_from/>
+        <source>e50cbed48366e210152f55b6feaad3f7</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-17 12:15:18</sys_created_on>
+        <sys_id>01fb15ed83f62210152f55b6feaad385</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>198184f78bd0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-17 12:15:18</sys_updated_on>
+        <type>Script Include</type>
+        <update_guid>c5fb15ed2ef622103bc27291ec290284</update_guid>
+        <update_guid_history>c5fb15ed2ef622103bc27291ec290284:1207883425,1888dda905f62210eddf655e3a73cb7a:-1641822421,ef1619e546f62210ca65afe5043ade8d:-1908150535,46a495e5ebf622109e959616c9a961f5:-609409416</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-17 15:55:12</sys_created_on>
+        <sys_db_object display_value="" name="sys_script_include">sys_script_include</sys_db_object>
+        <sys_id>14db6e0e470f4cf4880e6fa14c508a10</sys_id>
+        <sys_metadata>975199e183f62210152f55b6feaad35a</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>RescheduleAppointmentUtils</sys_name>
+        <sys_package display_value="Anime Times" source="7223e3a447ae2610403313ff016d4396">7223e3a447ae2610403313ff016d4396</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Anime Times">7223e3a447ae2610403313ff016d4396</sys_scope>
+        <sys_scope_delete display_value="">028d657fe05f47508153e5f7682bcca4</sys_scope_delete>
+        <sys_update_name>sys_script_include_975199e183f62210152f55b6feaad35a</sys_update_name>
+        <sys_update_version display_value="sys_script_include_975199e183f62210152f55b6feaad35a">01fb15ed83f62210152f55b6feaad385</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-17 15:55:12</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

@@ -1,80 +1,95 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update>
-    <sys_choice action="INSERT_OR_UPDATE" field="u_status" table="u_animes" version="3">
+    <sys_choice action="INSERT_OR_UPDATE" field="u_action" table="u_animes" version="3">
         <sys_choice_set action="INSERT_OR_UPDATE">
-            <element>u_status</element>
+            <element>u_action</element>
             <name>u_animes</name>
             <sys_class_name>sys_choice_set</sys_class_name>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2025-07-02 09:33:49</sys_created_on>
-            <sys_id>9d27632c47ae2610403313ff016d439b</sys_id>
+            <sys_created_on>2025-07-02 09:35:05</sys_created_on>
             <sys_mod_count>0</sys_mod_count>
-            <sys_name>u_status</sys_name>
+            <sys_name>u_action</sys_name>
             <sys_package display_value="Anime Times" source="7223e3a447ae2610403313ff016d4396">7223e3a447ae2610403313ff016d4396</sys_package>
             <sys_policy/>
             <sys_scope display_value="Anime Times">7223e3a447ae2610403313ff016d4396</sys_scope>
-            <sys_update_name>sys_choice_u_animes_u_status</sys_update_name>
+            <sys_update_name>sys_choice_u_animes_u_action</sys_update_name>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2025-07-02 09:33:49</sys_updated_on>
+            <sys_updated_on>2025-07-02 09:35:05</sys_updated_on>
         </sys_choice_set>
         <sys_choice action="INSERT_OR_UPDATE">
             <dependent_value/>
-            <element>u_status</element>
+            <element>u_action</element>
             <hint/>
             <inactive>false</inactive>
-            <label>Awaiting Release</label>
+            <label>Add to My Fav</label>
             <language>en</language>
             <name>u_animes</name>
             <sequence>10</sequence>
             <synonyms/>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2025-07-02 09:33:49</sys_created_on>
+            <sys_created_on>2025-07-02 09:35:05</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
-            <sys_id>3d072be847ae2610403313ff016d4392</sys_id>
             <sys_mod_count>2</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2025-07-02 09:34:17</sys_updated_on>
-            <value>awaiting_release</value>
+            <sys_updated_on>2025-07-02 09:35:29</sys_updated_on>
+            <value>add_to_fav</value>
         </sys_choice>
         <sys_choice action="INSERT_OR_UPDATE">
             <dependent_value/>
-            <element>u_status</element>
+            <element>u_action</element>
             <hint/>
             <inactive>false</inactive>
-            <label>Airing</label>
+            <label>Fav As InActive</label>
             <language>en</language>
             <name>u_animes</name>
             <sequence>20</sequence>
             <synonyms/>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2025-07-02 09:34:00</sys_created_on>
+            <sys_created_on>2025-07-07 07:03:30</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
-            <sys_id>1d27632c47ae2610403313ff016d43f5</sys_id>
             <sys_mod_count>2</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2025-07-02 09:34:19</sys_updated_on>
-            <value>airing</value>
+            <sys_updated_on>2025-07-07 07:03:42</sys_updated_on>
+            <value>fav_inactive</value>
         </sys_choice>
         <sys_choice action="INSERT_OR_UPDATE">
             <dependent_value/>
-            <element>u_status</element>
+            <element>u_action</element>
             <hint/>
             <inactive>false</inactive>
-            <label>Finished Airing</label>
+            <label>Reverse</label>
+            <language>en</language>
+            <name>u_animes</name>
+            <sequence>25</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-07-07 07:03:50</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-07-07 07:03:57</sys_updated_on>
+            <value>reverse</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_action</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Remove from My Fav</label>
             <language>en</language>
             <name>u_animes</name>
             <sequence>30</sequence>
             <synonyms/>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2025-07-02 09:34:08</sys_created_on>
+            <sys_created_on>2025-07-02 09:35:20</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
-            <sys_id>8437a32c47ae2610403313ff016d434f</sys_id>
-            <sys_mod_count>2</sys_mod_count>
+            <sys_mod_count>3</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2025-07-02 09:34:22</sys_updated_on>
-            <value>finished</value>
+            <sys_updated_on>2025-07-07 07:03:44</sys_updated_on>
+            <value>remove_fav</value>
         </sys_choice>
     </sys_choice>
 </record_update>

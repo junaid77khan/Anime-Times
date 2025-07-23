@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element audit="true" db_object_id="e5439d04936aa21031b072ba2bba1008" extends="task" label="Medication " max_length="40" name="u_medication" type="collection">
+        <element attributes="edge_encryption_enabled=true" label="total dosage" max_length="40" name="u_total_dosage" read_only="true" type="integer"/>
+    </element>
+</database>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_wizard_answer">
+    <sys_wizard_answer action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <answer>Req mgmt</answer>
+        <button_label/>
+        <dependent_value/>
+        <element/>
+        <name>Req mgmt</name>
+        <next_question/>
+        <order>100</order>
+        <payload_name/>
+        <question display_value="Task" name="Task">6c84bc289921221008ddd351c8920a8b</question>
+        <roles/>
+        <script/>
+        <sys_class_name>sys_wizard_answer</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-23 07:06:50</sys_created_on>
+        <sys_id>49ee87d383362210152f55b6feaad314</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Req mgmt</sys_name>
+        <sys_package display_value="Anime Times" source="7223e3a447ae2610403313ff016d4396">7223e3a447ae2610403313ff016d4396</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Anime Times">7223e3a447ae2610403313ff016d4396</sys_scope>
+        <sys_update_name>sys_wizard_answer_49ee87d383362210152f55b6feaad314</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-23 07:06:50</sys_updated_on>
+        <table/>
+        <target_url>u_req_mgmt.do</target_url>
+        <type>1</type>
+    </sys_wizard_answer>
+</record_update>

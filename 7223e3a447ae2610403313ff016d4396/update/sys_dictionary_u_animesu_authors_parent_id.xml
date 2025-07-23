@@ -47,7 +47,6 @@
         <sys_class_name>sys_dictionary</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-07-15 05:13:13</sys_created_on>
-        <sys_id>fa282df883322210152f55b6feaad3c2</sys_id>
         <sys_name>Parent ID</sys_name>
         <sys_package display_value="Anime Times" source="7223e3a447ae2610403313ff016d4396">7223e3a447ae2610403313ff016d4396</sys_package>
         <sys_policy/>
@@ -67,4 +66,18 @@
         <write_roles/>
         <xml_view>false</xml_view>
     </sys_dictionary>
+    <sys_claim action="INSERT_OR_UPDATE">
+        <claim_owner_scope display_value="Anime Times">7223e3a447ae2610403313ff016d4396</claim_owner_scope>
+        <claim_timestamp>198368d0db20000001</claim_timestamp>
+        <metadata_update_name>sys_dictionary_u_animesu_authors_parent_id</metadata_update_name>
+        <previous_claim_app_version>1.0.0</previous_claim_app_version>
+        <previous_claim_name>Anime Times</previous_claim_name>
+        <previous_claim_scope>7223e3a447ae2610403313ff016d4396</previous_claim_scope>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-23 09:11:10</sys_created_on>
+        <sys_id>165be79783b62210152f55b6feaad3fd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-23 09:11:10</sys_updated_on>
+    </sys_claim>
 </record_update>

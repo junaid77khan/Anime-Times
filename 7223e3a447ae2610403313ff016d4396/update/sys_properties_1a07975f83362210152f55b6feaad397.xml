@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_properties">
+    <sys_properties action="INSERT_OR_UPDATE">
+        <choices/>
+        <description>Req mgmt activity formatter fields</description>
+        <ignore_cache>false</ignore_cache>
+        <is_private>false</is_private>
+        <name>glide.ui.u_req_mgmt_activity.fields</name>
+        <read_roles/>
+        <suffix>global</suffix>
+        <sys_class_name>sys_properties</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-23 07:42:26</sys_created_on>
+        <sys_id>1a07975f83362210152f55b6feaad397</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>glide.ui.u_req_mgmt_activity.fields</sys_name>
+        <sys_package display_value="Anime Times" source="7223e3a447ae2610403313ff016d4396">7223e3a447ae2610403313ff016d4396</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Anime Times">7223e3a447ae2610403313ff016d4396</sys_scope>
+        <sys_update_name>sys_properties_1a07975f83362210152f55b6feaad397</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-23 07:42:26</sys_updated_on>
+        <type>string</type>
+        <value>assigned_to,cmdb_ci,state,impact,priority,opened_by,work_notes,comments,*Attachments*,active,activity_due,work_end,work_start,additional_assignee_list,approval,approval_history,approval_set,assignment_group,business_duration,close_notes,closed_at,closed_by,comments_and_work_notes,company,contact_type,contract,correlation_id,correlation_display,sys_created_on,sys_created_by,delivery_plan,delivery_task,description,sys_domain,sys_domain_path,due_date,calendar_duration,task_effective_number,escalation,expected_start,follow_up,group_list,knowledge,location,made_sla,number,opened_at,order,parent,reassignment_count,sla_due,business_service,service_offering,short_description,sys_tags,sys_class_name,time_worked,route_reason,universal_request,sys_updated_on,sys_updated_by,sys_mod_count,upon_approval,upon_reject,urgency,user_input,watch_list,work_notes_list</value>
+        <write_roles/>
+    </sys_properties>
+    <sys_translated_text action="delete_multiple" query="documentkey=1a07975f83362210152f55b6feaad397"/>
+</record_update>
